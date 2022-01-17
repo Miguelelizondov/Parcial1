@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: bisque;
+}
+
+#BobRossImg {
+  width: 50%;
+  border-style: double;
+  border-width: 5px;
+  display: block;
+  margin: auto;
+}
+
+.Titles {
+  text-align: center;
+}
+.Quote {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Date {
+  font-weight: bold;
+}
+.TimelineInfo {
+  padding: 5px;
+}
+footer {
+  margin-top: 50px;
+}
