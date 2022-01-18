@@ -1,96 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <script>
+      let nombres = [
+        'Jorge',
+        'Isabel',
+        'Juan',
+        'Pedro',
+        'Karina',
+        'Jose',
+        'Arturo',
+        'Rogelio',
+        'Bertha',
+      ];
+
+      /*
+
+      Funciones 1 -  Crea una funcion llamada "mayusculas" que:
+      - reciba como argumento el arreglo "nombres" y convierta todos los nombres a mayusula.
+      - Los debe escribir en la consola convertidos.
+
+      */
+
+      // CREA TU FUNCION MAYUSCULAS aqui:
+      function mayusculas(nombres) {
+        for (let i = 0; i < nombres.length; i++) {
+          nombres[i] = nombres[i].toUpperCase();
+          console.log(nombres[i]);
+        }
+      }
+      /*
+      Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
+
+      - reciba como argumento un número representando la edad en años humanos.
+      - realiza el cálculo de la edad en base a la conversión 1 año humano = 7 años perro.
+      - Deberá escribir en consola "Tu perro tiene NN años perro"
+      - EJ:   calculateDogAge(2)  -> "Tu pero tiene 14 años perro"
+
+      */
+
+      // CREA TU FUNCION calculateDogAge aqui:
+      function calculateDogAge(edad) {
+        console.log('Tu perro tiene ', edad * 7, ' años perro');
+      }
+
+      /*  OBJETOS
+
+      A) Define un objeto tipo "Perro" que reciba 3 parametros
+
+      1) Nombre
+      2) Color
+      3) Raza
 
 
+      B) Crea 3 objectos  con diferentes valores.
 
-<script>
-
-let nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogelio','Bertha'];
-
-
-/*
-
-Funciones 1 -  Crea una funcion llamada "mayusculas" que:
-- reciba como argumento el arreglo "nombres" y convierta todos los nombres a mayusula.
-- Los debe escribir en la consola convertidos.
-
-*/
-
-// CREA TU FUNCION MAYUSCULAS aqui:
+      C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte.
 
 
+      */
+      function Perro(nombre, color, raza) {
+        this.nombre = nombre;
+        this.color = color;
+        this.raza = raza;
+      }
 
+      const perroUno = new Perro('Peluche', 'Blanco', 'French Poodle');
+      const perroDos = new Perro('Camila', 'Cafe', 'Salchicha');
+      const perroTres = new Perro('Bruno', 'Dorado', 'Golden Retriever');
 
-/*
-Funciones 2 -  Crea una funcion llamada "calculateDogAge" que: 
+      /***
+       *
+       *        PRUEBA TUS FUNCIONES
+       *
+       ***/
 
-- reciba como argumento un número representando la edad en años humanos.
-- realiza el cálculo de la edad en base a la conversión 1 año humano = 7 años perro.  
-- Deberá escribir en consola "Tu perro tiene NN años perro"
-- EJ:   calculateDogAge(2)  -> "Tu pero tiene 14 años perro"
+      mayusculas(nombres);
+      calculateDogAge(4);
 
-*/
+      /***
+       *
+       *        PRUEBA TUS OBJETOS AQUI
+       *
+       ***/
+      console.log(
+        'El nombre del primer perro es: ',
+        perroUno.nombre,
+        '. El color del segundo es: ',
+        perroDos.color,
+        '. La raza del tercero es: ',
+        perroTres.raza,
+      );
+    </script>
+  </head>
 
-// CREA TU FUNCION calculateDogAge aqui:
-
-
-
-
-
-
-
-
-
-
-/*  OBJETOS 
-
-A) Define un objeto tipo "Perro" que reciba 3 parametros
-
-1) Nombre
-2) Color
-3) Raza
-
-
-B) Crea 3 objectos  con diferentes valores.
-
-C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte. 
-
-
-*/
-
-
-
-/***
- * 
- *        PRUEBA TUS FUNCIONES
- * 
- ***/
-
-
-mayusculas(nombres);
-calculateDogAge(4);
-
-
-
-
-/***
- * 
- *        PRUEBA TUS OBJETOS AQUI
- * 
- ***/
-
-
-</script>
-
-</head>
-
-<body>
-
-
-
-</body>
-
+  <body></body>
 </html>
